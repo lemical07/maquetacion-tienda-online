@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url('/img/fondo.png');
+  background-image: url('../img/fondo.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -91,7 +91,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background-image: url('/img/exp-btn.png');
+  background-image: url('../img/exp-btn.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   padding: 35px 100px;
