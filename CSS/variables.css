@@ -1,0 +1,78 @@
+:root {
+    /* ==============================
+       NEGROS
+       ============================== */
+    --black: #000000;
+    --black-deep: #050807;
+    --black-green: #0A0F0E;
+    --charcoal: #111716;
+    --charcoal-light: #18201E;
+
+
+    /* ==============================
+       VERDES OSCUROS
+       ============================== */
+    --green-forest: #0B2B23;
+    --green-dark: #104A3A;
+    --green-deep: #145C48;
+    --green: #176B52;
+    --green-medium: #218C6A;
+
+
+    /* ==============================
+       JADE
+       ============================== */
+    --jade-dark: #007F6D;
+    --jade: #008F7A;
+    --jade-primary: #00A896;
+    --jade-bright: #00BFA5;
+    --jade-intense: #00D1B2;
+    --jade-light: #33D6C2;
+    --jade-soft: #80E5D8;
+
+
+    /* ==============================
+       VERDES MUY CLAROS
+       ============================== */
+    --green-ice: #DDF5F0;
+    --jade-pale: #E5F8F4;
+    --green-white: #EFFAF8;
+    --white-jade: #F5FBFA;
+
+
+    /* ==============================
+       NEUTROS
+       ============================== */
+    --white: #FFFFFF;
+    --white-cold: #F8FAFA;
+    --gray-light: #F1F4F3;
+    --gray-border: #DCE3E1;
+    --gray: #A8B3B0;
+    --gray-dark: #596561;
+    --text-dark: #202927;
+
+
+    /* ==============================
+       ESTADOS
+       ============================== */
+    --success: #00A896;
+    --info: #147D6C;
+    --warning: #D99A00;
+    --error: #C0392B;
+    --danger: #8F1D1D;
+
+
+    /* ==============================
+       SOMBRAS
+       ============================== */
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+    --shadow-light: 0 2px 8px rgba(0, 0, 0, 0.05);
+    --shadow-medium: 0 6px 16px rgba(0, 0, 0, 0.10);
+    --shadow-jade: 0 4px 12px rgba(0, 168, 150, 0.20);
+
+
+    /* ==============================
+       OTROS
+       ============================== */
+    --border-radius: 12px;
+}
