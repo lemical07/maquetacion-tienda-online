@@ -231,7 +231,7 @@ body {
     margin-bottom: 4px;
 }
 /*----------------------------------------------------------------*/
-/* ===== SECCIÓN CATEGORÍAS ===== */
+/* categorias */
 .categories {
     padding: 60px 40px;
     text-align: center;
@@ -248,7 +248,7 @@ body {
     display: inline-block;
 }
 
-/* Línea dorada debajo del título */
+/* linea dorada */
 .section-title::after {
     content: "";
     display: block;
@@ -257,16 +257,50 @@ body {
     background-color: #9f824c;
     margin: 12px auto 0;
 }
+/* contenedor principal */
+main {
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    overflow: hidden;
+}
 
-/* ===== GRID DE 4 COLUMNAS ===== */
+/* titulo */
+.section-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2rem;
+    color: #e2c992;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: #9f824c;
+    margin: 10px auto 0;
+}
+
+/* grid 4 columnas*/
 .category-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
+    gap: 20px;
     max-width: 1200px;
+    width: 100%;
+    height: 65vh;
     margin: 0 auto;
 }
-/* ===== TARJETA DE CATEGORÍA (contenedor) ===== */
+
+/* tarjeta de categoria */
 .categ {
     width: 100%;
     height: 100%;
@@ -274,21 +308,29 @@ body {
     border-radius: 25px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     border-left: 1px solid #9f824c;
     border-right: 1px solid #9f824c;
-    padding: 20px 0;
-    gap: 15px;
+    padding: 15px 0;
+    overflow: hidden;
 }
 
-/* ===== BOTÓN DE CATEGORÍA ===== */
+/* imagen dentro de tarjeta */
+.categ img {
+    width: 100%;
+    height: 75%;          
+    object-fit: contain;  
+    padding: 0 15px;
+}
+
+/* boton de categoria */
 .category-item {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 60px;
-    width: 80%;
+    height: 50px;
+    width: 85%;
     background-color: #000000;
     border-top: 1px solid #9f824c;
     border-bottom: 1px solid #9f824c;
@@ -296,13 +338,11 @@ body {
     color: #e2c992;
     text-decoration: none;
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     letter-spacing: 2px;
     text-transform: uppercase;
     transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    margin: 0 auto;
+    margin-bottom: 10px;
 }
 
 .category-item:hover {
