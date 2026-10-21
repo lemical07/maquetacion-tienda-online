@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Historial de Compras | LíShop</title>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/variables.css">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/component.css">
+<link rel="stylesheet" href="../css/page-components.css">
+<link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+<header class="header">
+  <a class="header__marca" href="principal.html">
+    <img src="../img/logotipo.png" alt="Logotipo de LíShop">
+    <span>Lí<strong>Shop</strong></span>
+  </a>
+  <nav class="header__nav" aria-label="Navegación principal">
+      <a href="../index.html">Inicio</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="carrito.html">Carrito</a>
+      <a href="perfil.html" class="activo">Perfil</a>
+  </nav>
+  <div class="header__acciones">
+    <a class="header__icono" href="carrito.html"><img src="../img/carrito.png" alt=""><span>Carrito</span></a>
+    <a class="header__icono" href="perfil.html"><img src="../img/perfil.png" alt=""><span>Perfil</span></a>
+  </div>
+</header>
+<main class="contenedor">
+  <h1 class="titulo-seccion">Historial de Compras</h1>
+  <div class="pedidos">
+  <article class="pedido">
+    <div class="pedido__cabecera">
+      <div><h3>#LSH-003</h3><p class="pedido__fecha">11 de octubre de 2026</p></div>
+      <span class="estado estado--procesando">Procesando</span>
+    </div>
+    <div class="pedido__cuerpo">
+      <ul class="pedido__miniaturas">
+        <li><img src="../img/of-chesterfield.png" alt="Chesterfield"></li>
+        <li><img src="../img/of-corbata-seda.png" alt="Corbata de Seda Italiana"></li>
+      </ul>
+      <p class="pedido__total"><span>Total</span><strong>3,290 GTQ</strong></p>
+      <button class="btn" type="button">Ver detalles</button>
+    </div>
+  </article>
+  <article class="pedido">
+    <div class="pedido__cabecera">
+      <div><h3>#LSH-002</h3><p class="pedido__fecha">5 de octubre de 2026</p></div>
+      <span class="estado estado--camino">En camino</span>
+    </div>
+    <div class="pedido__cuerpo">
+      <ul class="pedido__miniaturas">
+        <li><img src="../img/ab-peacoat-gala.png" alt="Peacoat de Gala"></li>
+        <li><img src="../img/ac-guantes-cuero.png" alt="Guantes de Cuero"></li>
+      </ul>
+      <p class="pedido__total"><span>Total</span><strong>13,499 GTQ</strong></p>
+      <button class="btn" type="button">Ver detalles</button>
+    </div>
+  </article>
+  <article class="pedido">
+    <div class="pedido__cabecera">
+      <div><h3>#LSH-001</h3><p class="pedido__fecha">18 de septiembre de 2026</p></div>
+      <span class="estado estado--entregado">Entregado</span>
+    </div>
+    <div class="pedido__cuerpo">
+      <ul class="pedido__miniaturas">
+        <li><img src="../img/ca-oxford-clasica.png" alt="Oxford Clásica"></li>
+        <li><img src="../img/ca-pinpoint-oxford.png" alt="Pinpoint Oxford"></li>
+        <li><img src="../img/ac-cinturon-cuero.png" alt="Cinturón de Cuero"></li>
+      </ul>
+      <p class="pedido__total"><span>Total</span><strong>3,950 GTQ</strong></p>
+      <button class="btn" type="button">Ver detalles</button>
+    </div>
+  </article>
+  </div>
+</main>
+</body>
+</html>

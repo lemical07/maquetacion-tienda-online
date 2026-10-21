@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Mi Perfil | LíShop</title>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/variables.css">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/component.css">
+<link rel="stylesheet" href="../css/page-components.css">
+<link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+<header class="header">
+  <a class="header__marca" href="principal.html">
+    <img src="../img/logotipo.png" alt="Logotipo de LíShop">
+    <span>Lí<strong>Shop</strong></span>
+  </a>
+  <nav class="header__nav" aria-label="Navegación principal">
+      <a href="../index.html">Inicio</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="carrito.html">Carrito</a>
+      <a href="perfil.html" class="activo">Perfil</a>
+  </nav>
+  <div class="header__acciones">
+    <a class="header__icono" href="carrito.html"><img src="../img/carrito.png" alt=""><span>Carrito</span></a>
+    <a class="header__icono" href="perfil.html"><img src="../img/perfil.png" alt=""><span>Perfil</span></a>
+  </div>
+</header>
+<main class="contenedor">
+  <h1 class="titulo-seccion">Mi Perfil</h1>
+  <div class="perfil">
+    <section class="panel perfil__datos">
+      <div class="avatar" aria-hidden="true">U</div>
+      <h2>Usuario LíShop</h2>
+      <p>usuario@lishop.com</p>
+      <p>+502 0000 0000</p>
+    </section>
+    <section class="perfil__opciones">
+      <a class="perfil-opcion" href="historial.html"><span><strong>Mis Pedidos</strong><small>Consulta el estado de tus compras</small></span><span class="perfil-opcion__flecha">›</span></a>
+      <a class="perfil-opcion" href="vacio.html"><span><strong>Direcciones guardadas</strong><small>Administra tus lugares de entrega</small></span><span class="perfil-opcion__flecha">›</span></a>
+      <a class="perfil-opcion" href="vacio.html"><span><strong>Métodos de pago</strong><small>Tarjetas y preferencias de pago</small></span><span class="perfil-opcion__flecha">›</span></a>
+      <a class="perfil-opcion perfil-opcion--salir" href="../index.html"><span><strong>Cerrar sesión</strong><small>Salir de tu cuenta</small></span><span class="perfil-opcion__flecha">›</span></a>
+    </section>
+  </div>
+</main>
+</body>
+</html>

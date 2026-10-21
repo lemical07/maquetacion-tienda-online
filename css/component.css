@@ -257,16 +257,7 @@ body {
     background-color: #9f824c;
     margin: 12px auto 0;
 }
-/* contenedor principal */
-main {
-    height: calc(100vh - 80px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 40px;
-    overflow: hidden;
-}
+
 
 /* titulo */
 .section-title {
@@ -351,4 +342,227 @@ main {
     color: #ffffff;
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(159, 130, 76, 0.3);
+}
+/*------------------------------*/
+/* ===== CATÁLOGO ===== */
+.catalogo-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 30px 60px;
+    display: block;  /* Nada de flex que desalinee */
+    width: 100%;
+}
+
+/* ===== BARRA DE NAVEGACIÓN DE CATEGORÍAS (ANCLAS) ===== */
+.category-nav {
+    position: sticky;
+    top: 0;               /* Se pega al top cuando el header se va */
+    background-color: rgba(13, 13, 13, 0.98);
+    backdrop-filter: blur(5px);
+    border-top: 1px solid #9f824c;
+    border-bottom: 1px solid #9f824c;
+    z-index: 90;          /* Debajo del header (100) */
+    margin-bottom: 40px;
+}
+
+.category-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    padding: 15px 0;
+}
+
+.category-nav a {
+    text-decoration: none;
+    color: #9f824c;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    position: relative;
+}
+
+.category-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 1px;
+    background-color: #e2c992;
+    transition: width 0.3s;
+}
+
+.category-nav a:hover {
+    color: #e2c992;
+}
+
+.category-nav a:hover::after {
+    width: 100%;
+}
+
+/* ===== SECCIONES ===== */
+.seccion {
+    padding: 40px 0;
+    scroll-margin-top: 300px;
+}
+
+.section-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2rem;
+    color: #e2c992;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: #9f824c;
+    margin: 12px auto 0;
+}
+
+/* ===== GRID DE PRODUCTOS ===== */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    width: 100%;
+}
+
+/* ===== TARJETA DE PRODUCTO ===== */
+.product-card {
+    background: rgba(0, 0, 0, 0.841);
+    border: 1px solid #9f824c;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(159, 130, 76, 0.4);
+    border-color: #e2c992;
+}
+
+.product-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: contain;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.card-info {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.card-info h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.2rem;
+    color: #e2c992;
+    letter-spacing: 1px;
+}
+
+.price {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1rem;
+    color: #9f824c;
+    letter-spacing: 1px;
+}
+
+.price s {
+    color: #666;
+    margin-right: 8px;
+    font-size: 0.9rem;
+}
+
+/* ===== BOTÓN VER DETALLES ===== */
+.btn-add {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    border: 1px solid #9f824c;
+    border-radius: 25px;
+    color: #e2c992;
+    text-decoration: none;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    margin-top: auto;
+}
+
+.btn-add:hover {
+    background-color: #262626;
+    color: #fff;
+    border-color: #e2c992;
+    box-shadow: 0 0 15px rgba(226, 201, 146, 0.5);
+}
+
+/* ===== BADGE DE OFERTA CON BRILLO ===== */
+.badge-brillo {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, #fff 0%, #e2c992 40%, #9f824c 100%);
+    border-radius: 50%;
+    box-shadow: 0 0 10px #e2c992, 0 0 20px #9f824c;
+    z-index: 3;
+    animation: brillo 1.5s infinite alternate;
+}
+
+@keyframes brillo {
+    from {
+        transform: scale(1);
+        box-shadow: 0 0 10px #e2c992, 0 0 20px #9f824c;
+    }
+    to {
+        transform: scale(1.2);
+        box-shadow: 0 0 20px #e2c992, 0 0 40px #9f824c, 0 0 60px #9f824c;
+    }
+}
+
+.product-card.oferta {
+    border-color: #e2c992;
+    box-shadow: 0 0 15px rgba(226, 201, 146, 0.3);
+}
+
+/* ===== SCROLL SUAVE ===== */
+html {
+    scroll-behavior: smooth;
+}
+
+body:not(.portada) {
+    width: auto;
+    min-height: 100vh;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-image: linear-gradient(rgba(13, 13, 13, 0.42), rgba(13, 13, 13, 0.58)), url('../img/fondo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #0d0d0d;
+    display: block;
 }
