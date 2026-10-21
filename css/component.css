@@ -115,13 +115,13 @@ body {
   transform: translateX(5px);
 }
 
-/*----------------------------------------------------*/
+/* Portada */
 .principal {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.571);
 }
-/* header */
+/* Header */
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -230,8 +230,7 @@ body {
     object-fit: contain;
     margin-bottom: 4px;
 }
-/*----------------------------------------------------------------*/
-/* categorias */
+/* Categorías */
 .categories {
     padding: 60px 40px;
     text-align: center;
@@ -248,7 +247,7 @@ body {
     display: inline-block;
 }
 
-/* linea dorada */
+/* Línea dorada */
 .section-title::after {
     content: "";
     display: block;
@@ -259,7 +258,7 @@ body {
 }
 
 
-/* titulo */
+/* Título */
 .section-title {
     font-family: 'Playfair Display', Georgia, serif;
     font-size: 2rem;
@@ -280,7 +279,7 @@ body {
     margin: 10px auto 0;
 }
 
-/* grid 4 columnas*/
+/* Grid de cuatro columnas */
 .category-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -291,7 +290,7 @@ body {
     margin: 0 auto;
 }
 
-/* tarjeta de categoria */
+/* Tarjeta de categoría */
 .categ {
     width: 100%;
     height: 100%;
@@ -307,7 +306,7 @@ body {
     overflow: hidden;
 }
 
-/* imagen dentro de tarjeta */
+/* Imagen dentro de tarjeta */
 .categ img {
     width: 100%;
     height: 75%;          
@@ -315,7 +314,7 @@ body {
     padding: 0 15px;
 }
 
-/* boton de categoria */
+/* Botón de categoría */
 .category-item {
     display: flex;
     align-items: center;
@@ -343,25 +342,27 @@ body {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(159, 130, 76, 0.3);
 }
-/*------------------------------*/
-/* ===== CATÁLOGO ===== */
+/* Catálogo */
 .catalogo-container {
     max-width: 1400px;
     margin: 0 auto;
     padding: 20px 30px 60px;
-    display: block;  /* Nada de flex que desalinee */
+    /* Nada de flex que desalinee */
+    display: block;
     width: 100%;
 }
 
-/* ===== BARRA DE NAVEGACIÓN DE CATEGORÍAS (ANCLAS) ===== */
+/* Navegación de categorías */
 .category-nav {
     position: sticky;
-    top: 0;               /* Se pega al top cuando el header se va */
+    /* Se pega al top cuando el header se va */
+    top: 0;
     background-color: rgba(13, 13, 13, 0.98);
     backdrop-filter: blur(5px);
     border-top: 1px solid #9f824c;
     border-bottom: 1px solid #9f824c;
-    z-index: 90;          /* Debajo del header (100) */
+    /* Debajo del header (100) */
+    z-index: 90;
     margin-bottom: 40px;
 }
 
@@ -403,7 +404,7 @@ body {
     width: 100%;
 }
 
-/* ===== SECCIONES ===== */
+/* Secciones */
 .seccion {
     padding: 40px 0;
     scroll-margin-top: 300px;
@@ -429,7 +430,7 @@ body {
     margin: 12px auto 0;
 }
 
-/* ===== GRID DE PRODUCTOS ===== */
+/* Grid de productos */
 .product-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -437,7 +438,7 @@ body {
     width: 100%;
 }
 
-/* ===== TARJETA DE PRODUCTO ===== */
+/* Tarjeta de producto */
 .product-card {
     background: rgba(0, 0, 0, 0.841);
     border: 1px solid #9f824c;
@@ -493,7 +494,7 @@ body {
     font-size: 0.9rem;
 }
 
-/* ===== BOTÓN VER DETALLES ===== */
+/* Botón ver detalles */
 .btn-add {
     display: inline-block;
     padding: 10px 20px;
@@ -517,7 +518,7 @@ body {
     box-shadow: 0 0 15px rgba(226, 201, 146, 0.5);
 }
 
-/* ===== BADGE DE OFERTA CON BRILLO ===== */
+/* Indicador de oferta */
 .badge-brillo {
     position: absolute;
     top: 15px;
@@ -547,7 +548,7 @@ body {
     box-shadow: 0 0 15px rgba(226, 201, 146, 0.3);
 }
 
-/* ===== SCROLL SUAVE ===== */
+/* Scroll suave */
 html {
     scroll-behavior: smooth;
 }
