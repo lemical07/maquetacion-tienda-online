@@ -1,0 +1,110 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LíShop</title>
+        <link rel="stylesheet" href="../css/base.css">
+        <link rel="stylesheet" href="../css/component.css">
+        <link rel="stylesheet" href="../css/layout.css">
+        <link rel="stylesheet" href="../css/responsive.css">
+    </head>
+    <body>
+        <main class="catalogo-container">
+            <input type="checkbox" id="filter-toggle" class="filter-checkbox">
+            
+            <div class="catalogo-header">
+                <h1>Todos los Productos</h1>
+                <label for="filter-toggle" class="btn-filter">
+                    <span>Filtros</span>
+                </label>
+            </div>
+            <section class="catalogo-layout">
+                <aside class="filters-sidebar">
+                    <div class="filter-group">
+                        <h3>Categoría</h3>
+                        <label><input type="checkbox"> Abrigos</label>
+                        <label><input type="checkbox"> Camisas</label>
+                        <label><input type="checkbox"> Pantalones</label>
+                    </div>
+                    <div class="filter-group">
+                        <h3>Precio</h3>
+                        <label><input type="radio" name="price"> 0 GTQ - 5,000 GTQ </label>
+                        <label><input type="radio" name="price"> 5,000 GTQ - 10,000 GTQ</label>
+                        <label><input type="radio" name="price"> 10,000 GTQ - 15,000 GTQ</label>
+                        <label><input type="radio" name="price"> 15,000 GTQ - 20,000 GTQ</label>
+
+                    </div>
+                    
+                    <label for="filter-toggle" class="btn-close-filter">Aplicar Filtros</label>
+                </aside>
+        
+                <div class="product-grid">
+                    <article class="product-card">
+                        <div class="badge">Oferta</div>
+                        <img src="../img/Chesterfield.png" alt="Chesterfield">
+                        <div class="card-info">
+                            <h3>Chesterfield</h3>
+                            <p class="price">3,500 GTQ</p>
+                            <a href="producto.html" class="btn-add">Ver Detalles</a>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="badge">Oferta</div>
+                        <img src="../img/InvernessCape.png" alt="Inverness Cape">
+                        <div class="card-info">
+                            <h3>Inverness Cape</h3>
+                            <p class="price">11,500 GTQ</p>
+                            <a href="producto.html" class="btn-add" id="detail">Ver Detalles</a>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="badge">Oferta</div>
+                        <img src="../img/Peocat.png" alt="Peacoat de Gala">
+                        <div class="card-info">
+                            <h3>Peacoat de Gala</h3>
+                            <p class="price">11,999 GTQ</p>
+                            <a href="producto.html" class="btn-add">Ver Detalles</a>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="badge">Oferta</div>
+                        <img src="../img/Polo-Coat.png" alt="Polo Coat">
+                        <div class="card-info">
+                            <h3>Polo Coat</h3>
+                            <p class="price">17,000 GTQ</p>
+                            <a href="producto.html" class="btn-add">Ver Detalles</a>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="badge">Oferta</div>
+                        <img src="../img/CalvaryTwill.png" alt="Cavalry Twill">
+                        <div class="card-info">
+                            <h3>Cavalry Twill</h3>
+                            <p class="price">3,550 GTQ</p>
+                            <a href="producto.html" class="btn-add">Ver Detalles</a>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="badge">Oferta</div>
+                        <img src="../img/CTuxedoTrousers.png" alt="Tuxedo Trousers">
+                        <div class="card-info">
+                            <h3>Tuxedo Trousers</h3>
+                            <p class="price">4,500 GTQ</p>
+                            <a href="producto.html" class="btn-add">Ver Detalles</a>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="badge">Oferta</div>
+                        <img src="../img/GurkhaPants.png" alt="Gurkha Pants">
+                        <div class="card-info">
+                            <h3>Gurkha Pants</h3>
+                            <p class="price">6,800 GTQ</p>
+                            <a href="producto.html" class="btn-add">Ver Detalles</a>
+                        </div>
+                    </article>
+                    </div>
+            </section>
+        </main>
+    </body>
+    </html>
